@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Telegram Profile</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: #0f0f10;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app {
+    width: 100%;
+    max-width: 420px;
+    min-height: 100vh;
+    background: #0f0f10;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(180deg, #3b8f8a, #2e7c75);
+    padding-top: 20px;
+    padding-bottom: 28px;
+}
+
+.avatar-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: 30px auto 14px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: url("avatar.jpg") center / cover no-repeat;
+}
+
+/* NAME + PREMIUM */
+.name-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.premium {
+    width: 22px;
+    height: 22px;
+}
+
+.premium video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.status {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+/* CONTENT */
+.content {
+    padding: 15px;
+}
+
+/* Channel */
+.channel {
+    background: #1a1a1c;
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.channel-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: url("avatarChanel.png") center / cover no-repeat;
+}
+
+.channel-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.channel-sub {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* Card */
+.card {
+    background: #1a1a1c;
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+.row {
+    margin-bottom: 14px;
+}
+
+.label {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.value {
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background: #1a1a1c;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #2a8f5f;
+    opacity: 1;
+}
+
+/* Publication */
+.publication {
+    background: #1a1a1c;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.publication video {
+    width: 100%;
+    display: block;
+    background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="header">
+        <div class="avatar-wrapper">
+            <div class="avatar"></div>
+        </div>
+
+        <!-- NAME + PREMIUM ICON -->
+        <div class="name-wrapper">
+            <div class="name">BayRex</div>
+            <div class="premium">
+                <video src="status.webm" autoplay loop muted playsinline></video>
+            </div>
+        </div>
+
+        <div class="status">был(а) недавно</div>
+    </div>
+
+    <div class="content">
+
+        <!-- Channel -->
+        <a href="bio.html">
+            <div class="channel">
+                <div class="channel-avatar"></div>
+                <div>
+                    <div class="channel-title">Bio BayRex</div>
+                    <div class="channel-sub">Канал</div>
+                </div>
+            </div>
+        </a>
+
+        <!-- Info -->
+        <div class="card">
+            <div class="row">
+                <div class="label">Мобильный</div>
+                <div class="value">Анонимный 👽</div>
+            </div>
+
+            <div class="row">
+                <div class="label">О себе</div>
+                <div class="value">
+                    <a href="https://t.me/DBTprivate" target="_blank" style="color:#6ddf9c">
+                        @DBTprivate
+                    </a>
+                    <div style="opacity:.8;margin-top:2px;">うつ病のゲイ</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Имя пользователя</div>
+                <div class="value">
+                    <a href="https://t.me/BayRex1" target="_blank" style="color:#6ddf9c">
+                        @BayRex1
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">ID</div>
+                <div class="value">8221276881 · DC2, Amsterdam, NL</div>
+            </div>
+
+            <div class="row">
+                <div class="label">День рождения</div>
+                <div class="value">10 апр.</div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="tab active">Публикации</div>
+            <div class="tab">Архив публикаций</div>
+        </div>
+
+        <!-- Video -->
+        <div class="publication">
+            <video src="story.mp4" controls muted playsinline></video>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
