@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: #6ddf9c;
     text-decoration: none;
 }
 
@@ -131,6 +131,10 @@ a {
     margin-bottom: 14px;
 }
 
+.row:last-child {
+    margin-bottom: 0;
+}
+
 .label {
     font-size: 13px;
     opacity: 0.6;
@@ -139,6 +143,16 @@ a {
 .value {
     font-size: 16px;
     margin-top: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* SVG icon */
+.block-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 /* Tabs */
@@ -188,7 +202,6 @@ a {
             <div class="avatar"></div>
         </div>
 
-        <!-- NAME + PREMIUM ICON -->
         <div class="name-wrapper">
             <div class="name">BayRex</div>
             <div class="premium">
@@ -214,39 +227,34 @@ a {
 
         <!-- Info -->
         <div class="card">
-            <div class="row">
-                <div class="label">Мобильный</div>
-                <div class="value">Анонимный 👽</div>
-            </div>
 
+            <!-- О себе: none + SVG -->
             <div class="row">
                 <div class="label">О себе</div>
                 <div class="value">
-                    <a href="https://t.me/DBTprivate" target="_blank" style="color:#6ddf9c">
-                        @DBTprivate
-                    </a>
-                    <div style="opacity:.8;margin-top:2px;">うつ病のゲイ</div>
+                    <svg class="block-icon" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="9"
+                                stroke="#9aa0a6" stroke-width="2"/>
+                        <line x1="6.5" y1="17.5" x2="17.5" y2="6.5"
+                              stroke="#9aa0a6" stroke-width="2"/>
+                    </svg>
+                    <span style="opacity:.6">none</span>
                 </div>
             </div>
 
             <div class="row">
                 <div class="label">Имя пользователя</div>
                 <div class="value">
-                    <a href="https://t.me/BayRex1" target="_blank" style="color:#6ddf9c">
-                        @BayRex1
-                    </a>
+                    <a href="https://t.me/BayRex1" target="_blank">@BayRex1</a>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="label">ID</div>
-                <div class="value">8221276881 · DC2, Amsterdam, NL</div>
             </div>
 
             <div class="row">
                 <div class="label">День рождения</div>
                 <div class="value">10 апр.</div>
             </div>
+
         </div>
 
         <!-- Tabs -->
